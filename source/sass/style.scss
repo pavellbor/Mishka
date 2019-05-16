@@ -1,0 +1,47 @@
+$width-m: 320px;
+$width-t: 768px;
+$width-d: 1400px;
+
+@font-face {
+	font-weight: normal;
+	font-family: "Open Sans";
+	font-style: normal;
+	src: 
+	url(../fonts/OpenSans-Regular.woff2) format("woff2"),
+	url(../fonts/OpenSans-Regular.woff) format("woff");
+}
+
+@font-face {
+	font-weight: bold;
+	font-family: "Open Sans";
+	font-style: normal;
+	src: 
+	url(../fonts/OpenSans-Bold.woff2) format("woff2"),
+	url(../fonts/OpenSans-Bold.woff) format("woff");
+}
+
+body {
+	min-width: $width-m;
+	margin: 0;
+
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 30px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	color: #444444;
+}
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
