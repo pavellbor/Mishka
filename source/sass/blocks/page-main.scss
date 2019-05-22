@@ -1,0 +1,186 @@
+.page-main__box {
+	padding: 27px $padding-m 42px;
+
+	&--intro {
+		box-sizing: border-box;
+		min-height: 283px;
+		padding: 70px 0 0;
+	}
+
+	&--intro-inner {
+		min-height: 176px;
+		padding: 70px 0 0;
+
+		text-align: center;
+
+		background-color: #f1f1f1;
+	}
+
+	&--line {
+		background-image: url(../img/bg-line.svg);
+		background-repeat: repeat-x;
+		background-position: bottom;
+		background-size: 100% 6px;
+	}
+
+	&--reviews {
+		padding-top: 13px;
+		padding-bottom: 50px;
+	}
+
+	&--contacts {
+		padding-top: 37px;
+		padding-bottom: 39px;
+	}
+
+	&--catalog {
+		margin-bottom: 30px;
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+
+	&--production {
+		padding-top: 0;
+		padding-bottom: 58px;
+	}
+
+	&--order {
+		padding-top: 22px;
+		padding-bottom: 55px;
+	}
+}
+
+
+@media (min-width: $width-t) {
+
+	.page-main__box {
+		padding: 33px $padding-t 69px;
+
+		&--intro {
+			position: relative;
+
+			min-height: 757px;
+			padding: 154px $padding-t 0;
+
+			&::after {
+				content: "";
+
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				
+				display: block;
+				width: 100%;
+				height: 24px;
+
+				background-image: url(../img/bg-intro-line.svg);
+			}
+		}
+
+		&--intro-inner {
+			min-height: 236px;
+			padding-top: 95px;
+		}
+
+		&--line {
+			background-image: url(../img/bg-line-t.svg);
+			background-size: 100% 17px;
+		}
+
+		&--features {
+			padding-top: 50px;
+			padding-bottom: 85px;
+		}
+
+		&--reviews {
+			padding-top: 75px;
+			padding-bottom: 140px;
+		}
+
+		&--contacts {
+			padding-top: 53px;
+			padding-bottom: 58px;
+		}
+
+		&--catalog {
+			margin-bottom: 53px;
+			padding-top: 68px;
+			padding-bottom: 0;
+		}
+
+		&--production {
+			padding-top: 0;
+			padding-bottom: 63px;
+		}
+
+		&--order {
+			padding: 0;
+			padding-top: 61px;
+			padding-bottom: 55px;
+		}
+	}
+}
+
+
+@media (min-width: $width-d) {
+
+	.page-main__box {
+		max-width: $width-d - 2 * $padding-d;
+		margin: 0 auto;
+		padding: 106px $padding-d 100px;
+
+		&--intro {
+			min-height: 762px;
+			max-width: 100%;
+			padding: 154px $padding-d 0;
+
+			&::after {
+				height: 34px;
+			}
+		}
+
+		&--intro-inner {
+			min-height: 272px;
+			padding-top: 94px;
+		}
+
+		&--line {
+			background-repeat: no-repeat;
+			background-size: $width-d - 2 * $padding-d 23px;
+		}
+
+		&--features {
+			padding-top: 56px;
+			padding-bottom: 85px;
+		}
+
+		&--reviews {
+			padding-top: 75px;
+			padding-bottom: 185px;
+		}
+
+		&--contacts {
+			padding-top: 142px;
+			padding-bottom: 105px;
+		}
+
+		&--catalog {
+			margin-bottom: 58px;
+			padding-top: 110px;
+			padding-bottom: 0;
+		}
+
+		&--production {
+			padding-top: 0;
+			padding-bottom: 103px;
+		}
+
+		&--order {
+			max-width: 100%;
+			margin: 0;
+			padding: 0;
+			padding-top: 103px;
+			padding-bottom: 50px;
+		}
+	}
+}

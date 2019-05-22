@@ -1,0 +1,45 @@
+.intro {
+	background-color: #f9f9f9;
+	background-image: url(../img/bg-intro-m.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 320px 356px;
+
+	@media (min-resolution: $r-dppx), (min-resolution: $r-dpi) {
+		background-image: url(../img/bg-intro-m@2x.jpg);
+	}
+}
+
+.intro__title {
+	margin-bottom: 122px;
+	padding: 0 30px;
+
+	text-align: center;
+}
+
+
+@media (min-width: $width-t) {
+
+	.intro {
+		background-image: url(../img/bg-intro-t.jpg);
+		background-size: 768px 746px;
+
+		@media (min-resolution: $r-dppx), (min-resolution: $r-dpi) {
+			background-image: url(../img/bg-intro-t@2x.jpg);
+		}
+	}
+
+	.intro__title {
+		margin-bottom: 372px;
+		padding: 0 $padding-t;
+	}
+}
+
+
+@media (min-width: $width-d) {
+
+	.intro__title {
+		margin-bottom: 358px;
+		padding: 0;
+	}
+}

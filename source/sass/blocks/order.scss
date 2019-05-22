@@ -1,0 +1,24 @@
+.order__lead {
+	margin: 0;
+	margin-bottom: 23px;
+
+	font-size: 13px;
+}
+
+@media (min-width: $width-t) {
+
+	.order__lead {
+		margin: 0 auto;
+		margin-bottom: 73px;
+
+		font: inherit;
+	}
+}
+
+
+@media (min-width: $width-d) {
+
+	.order__lead {
+		width: 700px;
+	}
+}

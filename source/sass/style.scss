@@ -1,6 +1,12 @@
 $width-m: 320px;
+$padding-m: 30px;
 $width-t: 768px;
-$width-d: 1400px;
+$padding-t: 50px;
+$width-d: 1250px;
+$padding-d: 100px;
+
+$r-dpi: 144dpi;
+$r-dppx: 1.5dppx;
 
 @font-face {
 	font-weight: normal;
@@ -21,14 +27,23 @@ $width-d: 1400px;
 }
 
 body {
+	position: relative;
+
 	min-width: $width-m;
 	margin: 0;
 
 	font-weight: normal;
 	font-size: 15px;
-	line-height: 30px;
+	line-height: 24px;
 	font-family: "Open Sans", "Arial", sans-serif;
 	color: #444444;
+
+	background-color: #ffffff;
+
+	@media (min-width: $width-t) {
+		font-size: 17px;
+		line-height: 30px;
+	}
 }
 
 .visually-hidden {
@@ -45,3 +60,36 @@ body {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+
+@import "blocks/page-header.scss";
+@import "blocks/header-logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/submenu.scss";
+@import "blocks/site-nav.scss";
+@import "blocks/user-nav.scss";
+@import "blocks/title.scss";
+@import "blocks/button.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/intro.scss";
+@import "blocks/categories.scss";
+@import "blocks/page-main.scss";
+@import "blocks/hit.scss";
+@import "blocks/features.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer-logo.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/modal-bg.scss";
+@import "blocks/modal.scss";
+@import "blocks/cart-add.scss";
+
+@import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/production.scss";
+
+@import "blocks/order.scss";
+@import "blocks/form-box.scss";
+@import "blocks/form.scss";

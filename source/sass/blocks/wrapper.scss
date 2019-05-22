@@ -1,0 +1,12 @@
+.wrapper {
+	max-width: $width-t - 2 * $padding-t;
+	margin: 0 auto;
+}
+
+
+@media (min-width: $width-d) {
+
+	.wrapper {
+		max-width: $width-d - 2 * $padding-d;
+	}
+}

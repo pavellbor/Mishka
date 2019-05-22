@@ -1,0 +1,46 @@
+.form__footer {
+	width: 668px;
+}
+
+.form__footnote {
+	margin: 0;
+	margin-bottom: 31px;
+
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.form__button {
+	width: 100%;
+}
+
+
+@media (min-width: $width-t) {
+
+	.form__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+
+	.form__footnote {
+		margin: 0;
+
+		font: inherit;
+	}
+
+	.form__button {
+		order: -1;
+		width: 230px;
+	}
+}
+
+
+@media (min-width: $width-d) {
+
+	.form__footer {
+		width: 700px;
+	}
+}

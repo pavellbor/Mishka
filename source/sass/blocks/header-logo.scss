@@ -1,0 +1,37 @@
+.header-logo {
+	width: 86px;
+	height: 35px;
+	margin-top: -1px;
+	margin-left: -2px;
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.header-logo__image {
+	width: 100%;
+	height: auto;
+}
+
+
+@media (min-width: $width-t) {
+
+	.header-logo {
+		width: 113px;
+		height: 46px;
+	}
+}
+
+
+@media (min-width: $width-d) {
+
+	.header-logo {
+		width: 149px;
+		height: 72px;
+	}
+}

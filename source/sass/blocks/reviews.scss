@@ -1,0 +1,173 @@
+.reviews__title {
+	margin-left: -1px;
+	margin-bottom: 24px;
+}
+
+.reviews__list {
+	margin-bottom: 33px;
+}
+
+.reviews__item {
+	margin: 0;
+}
+
+.reviews__image {
+	display: none;
+}
+
+.reviews__text {
+	margin: 0;
+	margin-bottom: 26px;
+
+	line-height: 30px;
+}
+
+.reviews__author {
+	font-style: normal;
+	font-size: 17px;
+}
+
+.reviews__author-name {
+	display: block;
+	margin-bottom: 6px;
+
+	font-weight: bold;
+	color: #000000;
+}
+
+.reviews__author-contacts {
+	color: #444444;
+	text-decoration: none;
+}
+
+.reviews__nav {
+	display: flex;
+	margin: 0;
+	margin-bottom: 38px;
+
+	border: 1px solid #ececec;
+}
+
+.reviews__arrow {
+	box-sizing: border-box;
+	width: 50%;
+	height: 50px;
+
+	background: transparent;
+	background-image: url(../img/icon-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50px 26px;
+	border: none;
+
+	transition: 0.5s;
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+
+	&--prev {
+		border-right: 1px solid #ececec;
+	}
+
+	&--next {
+		transform: scaleX(-1);
+	}
+}
+
+
+@media (min-width: $width-t) {
+
+	.reviews__inner {
+		position: relative;
+	}
+
+	.reviews__title {
+		margin-left: -5px;
+		margin-bottom: 48px;
+	}
+
+	.reviews__button {
+		position: absolute;
+		top: 3px;
+		right: 0;
+
+		width: 175px;
+	}
+
+	.reviews__list {
+		margin-bottom: 0;
+	}
+
+	.reviews__image {
+		position: absolute;
+		top: -76px;
+		left: -50px;
+		z-index: -1;
+		
+		display: block;
+		width: 350px;
+		height: 457px;
+	}
+
+	.reviews__text {
+		margin-bottom: 56px;
+	}
+
+	.reviews__author-name {
+		margin-bottom: 0;
+
+		font-size: 18px;
+	}
+
+	.reviews__nav {
+		position: absolute;
+		right: 0;
+		bottom: 3px;
+		width: 175px;
+		margin-bottom: 0;
+		border: none;
+	}
+
+	.reviews__arrow {
+		box-sizing: border-box;
+		width: 50%;
+		height: 50px;
+
+		border: none;
+
+		&--prev {
+			border-right: none;
+		}
+	}
+}
+
+
+@media (min-width: $width-d) {
+
+	.reviews__inner {
+		padding-left: 175px;
+	}
+
+	.reviews__button {
+		top: 10px;
+	}
+
+	.reviews__text {
+		margin-bottom: 37px;
+		padding-right: 105px;
+	}
+
+	.reviews__author-name {
+		font-size: 17px;
+	}
+
+	.reviews__image {
+		top: -70px;
+		left: 0;
+	}
+}

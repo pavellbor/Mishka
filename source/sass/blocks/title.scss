@@ -1,0 +1,45 @@
+.title {
+	margin: 0;
+
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 30px;
+	color: #000000;
+
+	&--big {
+		font-size: 27px;
+	}
+
+	&--small {
+		font-size: 17px;
+		line-height: 24px;
+	}
+}
+
+
+@media (min-width: $width-t) {
+
+	.title, .title--big {
+		font-size: 43px;
+		line-height: 50px;
+	}
+
+	.title--small {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+
+@media (min-width: $width-d) {
+
+	.title, .title--big {
+		font-size: 53px;
+		line-height: 57px;
+	}
+
+	.title--small {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
